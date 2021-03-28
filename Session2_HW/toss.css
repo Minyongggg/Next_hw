@@ -1,0 +1,81 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    margin: 0px 15px 0px 10px;
+}
+
+.bank {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(65, 65, 65);
+}
+
+.money {
+    font-size: 19px;
+    font-weight: 800;
+    color: rgb(65, 65, 65);
+}
+
+#container {
+    border: 1px solid black;
+    display: flex;
+    width: 1030px;
+    margin: 30px;
+}
+
+#text-box {
+ padding: 110px 30px 110px 70px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ width: 530px;
+}
+
+#text1 {
+    font-size: 40px;
+    font-weight: 900;
+    color:rgb(65, 65, 65)
+}
+
+#text2 {
+    line-height: 30px;
+}
+
+#text3 {
+    color: rgb(49, 121, 255);
+    font-weight: 1000;
+}
+
+#accounts {
+    padding: 10px 30px 10px 50px;
+    width: 500px;
+
+}
+
+.account {
+    border:white 0px solid;
+    border-radius: 15px;
+    box-shadow:0 30px 60px 12px rgba(0, 0, 33, 0.05),
+0 4px 24px 0 rgba(0, 0, 33, 0.05),
+0 0 1px 0 rgba(0, 0, 33, 0.09) ;
+    margin: 10px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 7px;
+}
+
+.bank {
+    display: flex;
+    align-items: center;
+}
+
