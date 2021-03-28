@@ -40,6 +40,7 @@ header div {
 .content {
     width: 33%;
     height: 33%;
+    border: 2px white solid;
 }
 
 #container {
