@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count result</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+</head>
+<body>
+    <div class="wrap">
+        <h2>글자 수와 단어 수를 확인하세요!</h2>
+        <p>입력한 텍스트: {{original_text}}</p>
+        <p>글자 수: {{total_len}}</p>
+        <p>공백 제외 글자 수: {{len_noblank}}</p>
+        <p>단어 수: {{word_count}}</p>
+    </div>
+</body>
+</html> 
