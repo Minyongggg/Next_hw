@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'edit.css' %}">
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>To Do Edit</h1>
+        </header>
+        <div id="main">
+            <form action="" method="POST">
+                {% csrf_token %}
+                <label for="title">제목</label>
+                <input type="text" name="title" value="{{ post.title }}">
+                <label for="content">세부사항</label>
+                <textarea name="content" cols="30" rows="10">{{ post.content }}</textarea>
+                <label for="date">마감일자</label>
+                <input type="date" name="date" value="{{ post.date_str }}">
+                <button type="submit">수정하기</button>
+            </form>
+        </div>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
