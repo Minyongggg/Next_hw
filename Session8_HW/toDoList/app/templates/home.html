@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load mathfilters %}
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+{% endblock css %}
+
+{% block container %}
+<header>
+    <h1>To Do List</h1>
+</header>
+<div id="main">
+    {% for post in posts %}
+    <div class="content">
+        {% if post.dday >= 0 %}
+        <div class="dday day{{ post.dday }}">
+            D-{{ post.dday }}
+        </div>
+        {% else %}
+        <div class="dday expired">
+            D+{{ post.dday|mul:-1 }}
+        </div>
+        {% endif %}
+        <div class="title"><a href="{% url 'detail' post.pk %}">{{ post.title }}</a></div>
+        <div><a href="{% url 'edit' post.pk %}"><img class="small-button" src="{% static 'icon/edit.png' %}" alt=""></a></div>
+        <div><a href="{% url 'delete' post.pk %}"><img class="small-button" src="{% static 'icon/delete.png' %}" alt=""></a></div>
+    </div>
+    {% endfor %}
+</div>
+<footer>
+    <a href="{% url 'new' %}" class="button"><div>New</div></a>
+    <a href="{% url 'delete_all' %}" class="button"><div>Clear all</div></a>
+</footer>
+{% endblock container %}

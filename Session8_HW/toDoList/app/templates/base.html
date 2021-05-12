@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    {% block css %}
+
+    {% endblock css %}
+</head>
+<body>
+    <div id="top-wrap">
+        <nav>
+            <div id="main-logo">ToDo</div>
+            <div class="nav-icon" OnClick="location.href ='{% url 'home' %}'" style="cursor:pointer;"><img src="{% static 'icon/home_w.png' %}" alt=""></div>
+            <div class="nav-icon" OnClick="location.href ='{% url 'new' %}'" style="cursor:pointer;"><img src="{% static 'icon/new.png' %}" alt=""></div>
+        </nav>
+    </div>
+    <div id="wrap">
+        <div id="container">
+            {% block container %}
+    
+            {% endblock container %}
+        </div>
+    </div>
+
+</body>
+</html>
