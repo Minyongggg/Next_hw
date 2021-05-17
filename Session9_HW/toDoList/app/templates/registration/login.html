@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'login.css' %}">
+{% endblock css %}
+{% block container %}
+<header>
+    <h1>Log in</h1>
+</header>
+<div id="main">
+    {% if error %}
+    <h4 style="color: red;">{{ error }}</h4>
+    {% endif %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="user_id">ID</label>
+        <input type="text" name="user_id">
+    
+        <label for="user_pw">PW</label>
+        <input type="password" name="user_pw">
+
+        <button type="submit">로그인</button>
+    </form>
+</div>
+
+{% endblock container %}

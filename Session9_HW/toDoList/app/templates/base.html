@@ -1,0 +1,48 @@
+{% load static %}
+{% load socialaccount %}
+{% providers_media_js %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'base.css' %}">
+    {% block css %}
+
+    {% endblock css %}
+</head>
+<body>
+    <div id="top-wrap">
+        <nav>
+            <div id="nav-left">
+                <div id="main-logo">ToDo</div>
+                <div class="nav-icon" OnClick="location.href ='{% url 'home' %}'" style="cursor:pointer;"><img src="{% static 'icon/home_w.png' %}" alt=""></div>
+                <div class="nav-icon" OnClick="location.href ='{% url 'new' %}'" style="cursor:pointer;"><img src="{% static 'icon/new.png' %}" alt=""></div>
+            </div>
+            <div id="nav-right">
+                {% if user.is_authenticated %}
+                <div style="padding: 0; display: flex; width: 150px">
+                    <img style="width: 30px; height: 30px; margin: 2px 0 0 6px;" src="{% static 'icon/profile.png' %}" alt="">
+                    <p style="padding: 8px 0 0 4px; text-align: left;">{{ user.username }}</p>
+                </div>
+                <div OnClick="location.href ='{% url 'logout' %}'" style="cursor:pointer;">Log out</div>
+                {% else %}
+                <div OnClick="location.href ='{% provider_login_url 'kakao' %}'" style="cursor:pointer;">Kakao</div>
+                <div OnClick="location.href ='{% url 'login' %}'" style="cursor:pointer;">Log in</div>
+                <div OnClick="location.href ='{% url 'signup' %}'" style="cursor:pointer;">Sign up</div>
+                {% endif %}
+            </div>
+        </nav>
+    </div>
+    <div id="wrap">
+        <div id="container">
+            {% block container %}
+    
+            {% endblock container %}
+        </div>
+    </div>
+
+</body>
+</html>

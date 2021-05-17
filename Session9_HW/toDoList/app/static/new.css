@@ -1,0 +1,32 @@
+#main {
+    height: 540px;
+    padding: 20px 20px 0px 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+input {
+    height: 40px;
+    padding-left: 8px;
+    margin-bottom: 15px;
+    margin-top: 4px;
+}
+
+textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+    margin-top: 4px;
+}
+
+footer {
+    height: 80px;
+}
+
+button {
+    width: 170px;
+    height: 55px;
+    margin: 5px 140px;
+    font-size: 19px;
+}

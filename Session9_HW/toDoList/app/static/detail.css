@@ -1,0 +1,75 @@
+#main {
+    height: 540px;
+    padding: 30px 60px 0px 60px;
+}
+
+#main h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+#main div {
+    margin-bottom: 30px;
+}
+
+#main .comment-box {
+    margin: 50px 0 0 0;
+    height: 200px;
+    border: 3px dashed rgb(255, 224, 224);
+    border-radius: 15px;
+    padding: 10px 16px 0 16px;
+}
+
+#main .comment-box .comments {
+    height: 120px
+}
+
+#main .comment-box h4 {
+    margin-bottom: 10px;
+}
+
+#main .comment-box li a {
+    color: rgb(255, 56, 56);    
+    margin-left: 5px;
+}
+#main .comment-box li a:hover {
+    text-decoration: underline;
+}
+
+#main .comment-form form{
+    display: flex;
+    justify-content: right;
+}
+
+#main .comment-form button{
+    width: 60px;
+    margin-left: 5px;
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 55px;
+}
+
+.button {
+    height: 60px;
+    width: 120px;
+}
+
+
+.button div{
+    height: 60px;
+    width: 120px;
+    font-size: 23px;
+    padding-top: 16px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+.button div:hover{
+    background-color: rgb(150, 150, 150);
+    color: rgb(255, 255, 255);
+}

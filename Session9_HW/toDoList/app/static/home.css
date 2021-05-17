@@ -1,0 +1,95 @@
+#main {
+    min-height: 540px;
+    padding: 20px;
+}
+
+.content {
+    height: 70px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    border: 1px solid rgb(240, 240, 240);
+    box-shadow:0 30px 60px 12px rgba(0, 0, 33, 0.05),
+    0 4px 24px 0 rgba(0, 0, 33, 0.05),
+    0 0 1px 0 rgba(0, 0, 33, 0.09) ;
+}
+
+.content div {
+    width: 60px;
+    text-align: center;
+    padding-top: 19px;
+}
+
+.content .title {
+    width: 280px;
+    text-align: left;
+    padding-left: 19px;
+    font-size: 22px;
+    padding-top: 19px;
+}
+
+.content .title:hover {
+    text-decoration: underline;
+}
+
+.content .dday {
+    padding-top: 22px;
+    font-size: 20px;
+    background-color: rgb(255, 200, 200);
+    border-radius: 18px;
+    color: white;
+}
+
+.content .day0 {
+    background-color: rgb(255, 40, 40);
+}
+
+.content .day1 {
+    background-color: rgb(255, 80, 80);
+}
+
+.content .day2 {
+    background-color: rgb(255, 120, 120);
+}
+
+.content .day3 {
+    background-color: rgb(255, 160, 160);
+}
+
+.content .expired {
+    background-color: black;
+}
+
+
+.small-button {
+    width: 30px;
+    height: 30px;
+}
+
+.small-button:hover{
+    width: 32px;
+    height: 32px;
+}
+
+footer {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 45px;
+}
+
+.button div{
+    height: 60px;
+    width: 180px;
+    font-size: 23px;
+    padding-top: 16px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+
+.button div:hover {
+    background-color: rgb(150, 150, 150);
+    color: rgb(255, 255, 255);
+}
