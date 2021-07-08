@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ex1.css">
+    <title>Awesome</title>
+</head>
+<body>
+    <div id="myDIV" class="header">
+        <h2>Awesome To Do List</h2>
+        <button id="myBtn">Open Loading</button>
+        <button id="color">Color Change</button>
+
+        <div class="inputBox" style="margin-top: 10px;">
+            <input type="text" id="myInput" placeholder="Title...">
+            <button onclick="newElement()" class="addBtn">Add</button>
+        </div>
+    </div>
+      
+    <ul id="myUL">
+
+    </ul>
+
+    <!-- Modal Box -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="cls">&times;</span>
+            <div class="flex">
+                <span style="margin: 0 0 10px 0;">Your To Do is loading</span>
+            </div>
+            <div class="flex">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="ex1.js"></script>
+</html>
